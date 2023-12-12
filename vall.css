@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F4F0E8   ;
+}
+
+.title{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+    color: #2d70ff;
+    margin:20px 0px ;
+}
+.title2{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+    color: #2d70ff;
+    margin:20px 0px ;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 22em;
+    min-width: 32em;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #333;
+    padding-bottom: 20px;
+    margin:  20px 20px;
+}
+
+.card-img-top{
+    width:60%;
+    height:22em;
+    transition: 0.7s ease;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    margin-right: 20px;
+}
+.card-body{
+    margin-top: 20px;
+}
+.card-title{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.2em;
+    margin-top: 30px;
+    color: #F4F0E8;
+}
+.card-price{
+    font-family: 'Arimo', sans-serif;
+    color: #2d70ff;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+.card-text{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1em;
+    color: #F4F0E8;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.card-body a{
+    text-decoration: none;
+    color: #F4F0E8;
+    font-size: 1em;
+    font-family: 'Arimo', sans-serif;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: red;
+    transition: 0.7s ease;
+}
+.card-body a:hover{
+    background-color: rgb(189, 0, 0);
+}
+.card-num{
+    display: flex;
+    justify-content: center;
+}
+.card-num h3{
+    color: #F4F0E8;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+.card-num input{
+    width: 40px;
+    height: 30px;
+    padding: 2px 5px;
+    font-size: 1.2em;
+    font-family: 'Arimo', sans-serif;
+    border-radius: 10px;    
+}
+.add{
+    text-decoration: none;
+    background-color:#2d70ff ;
+    color: #F4F0E8;
+    font-size: 1.2em;
+    font-family: 'Arimo', sans-serif;
+    padding: 5px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: #0a3183;
+}

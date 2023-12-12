@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F4F0E8;
+}
+header{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 20px;
+    background-color: #333;
+}
+header img{
+    width: 230px;
+    height: 140px;
+    margin-top: -40px;
+    margin-bottom: -65px;
+    margin-left: 20px;
+}
+header a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #2d70ff;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+header a:hover{
+    color: #F4F0E8;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+.title{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+    color: #2d70ff;
+    margin:20px 0px ;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 20em;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #333;
+    padding-bottom: 20px;
+    float: left;
+    margin:  20px 20px;
+}
+
+.card-img-top{
+    width:100%;
+    height:22em;
+    transition: 0.7s ease;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    margin-bottom: 20px;
+}
+.card-title{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #F4F0E8;
+}
+.card-price{
+    font-family: 'Arimo', sans-serif;
+    color: #2d70ff;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+.card-text{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1em;
+    color: #F4F0E8;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.edit{
+    text-decoration: none;
+    background-color:#2d70ff ;
+    color: #F4F0E8;
+    font-size: 1.2em;
+    font-family: 'Arimo', sans-serif;
+    padding: 5px;
+    margin-right: 30px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+.edit:hover{
+    background-color: #3261c7;
+}
+.delete{
+    text-decoration: none;
+    background-color:red ;
+    color: #F4F0E8;
+    font-size: 1.2em;
+    font-family: 'Arimo', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+.delete:hover{
+    background-color: rgb(196, 4, 4);
+}

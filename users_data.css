@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 20px;
+    background-color: #333;
+}
+.name img{
+   width: 230px;
+   height: 140px;
+   margin-top: -40px;
+   margin-bottom: -65px;
+    margin-left: 20px;
+}
+.name i{
+    text-decoration: none;
+    color: #2d70ff;
+    font-size: 1.5em;
+    transition: 0.7s ease;
+}
+.name i:hover{
+    color: #F4F0E8;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 75%;
+    margin: 40px 0px;
+    padding: 20px 10px;
+    border: #333;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #333;
+}
+h1{
+    font-size: 2em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
+    color: #2d70ff;
+    margin-top: 20px;
+}
+hr{
+   width: 200px;
+   margin-top: 10px;
+}
+.container .user-data{
+   display: flex;
+   flex-direction: column;
+   margin-right: 30px;
+}
+.container .user-data input{
+    border:none;
+    text-decoration: none;
+    box-shadow: 1px 1px 10px #333;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    background-color: #F4F0E8;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    color: #2d70ff;
+}
+.container input:focus{
+    outline: none;
+}
+.container button{
+    text-decoration: none;
+    background-color: #333;
+    box-shadow: 1px 1px 10px #333;
+    color: #2d70ff;
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.2em;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.container button:hover{
+    background-color: #2d70ff;
+    color: #333;
+}
+.container .prod-data{
+    padding:20px 0;
+    margin-top: 20px;
+ }
+ .container .prod-data h2{
+   color: #2d70ff;
+   font-family: 'Arimo', sans-serif;
+   font-size: 1.5em;
+   margin-bottom  :10px ;
+ }
+ 
+ .container .prod-data table{
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #333;
+    background-color:#F4F0E8;
+ }
+ 
+ .container .prod-data table thead{
+    background-color: #333;
+ }
+ 
+ .container .prod-data table thead th{
+    padding:10px;
+    color:#2d70ff;
+    font-family: 'Arimo', sans-serif;
+     font-size: 1.2em;
+     font-weight: 500;
+    text-transform: capitalize;
+ }
+ 
+ .container .prod-data table .table-bottom{
+    background-color: #333;
+ }
+ .container .prod-data table .table-bottom td{
+     color: #2d70ff;
+     font-size: 1em;
+     font-family: 'Arimo', sans-serif;
+     font-weight: 500;
+ }
+ 
+ .container .prod-data table tr td{
+    padding:10px;
+    font-size: 1.2em;
+    color:#771D00;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+ }
+ 
+ .container .prod-data table tr td:nth-child(1){
+    padding:0;
+ }
+ 
+ .container .prod-data table tr td input[type="number"]{
+    width: 80px;
+    border:var(--border);
+    padding:12px 14px;
+    font-size: 20px;
+    color:var(--black);
+ }
+ 
+ .container .prod-data .cart-btn{
+    margin-top: 10px;
+    text-align: center;
+ }
+ 
+ .container .prod-data .disabled{
+    pointer-events: none;
+    background-color: var(--red);
+    opacity: .5;
+    user-select: none;
+ }
+ .container .prod-data input{
+   margin-top: 20px;
+}
+ .container .prod-data label{
+   color: #2d70ff;
+   font-size: 1.2em;
+   font-weight: 800;
+   font-family: 'Arimo', sans-serif;
+ }
+
+ .container .prod-data div h2{ 
+   text-align: center;
+   margin-top: 20px; 
+}
+
+
+ .container .prod-data div ul{
+   margin-top: 20px;
+   list-style: decimal;
+   text-align: left;
+   color: #2d70ff;
+   font-family: 'Arimo', sans-serif;
+   font-size: 1em;
+   font-weight: 500;
+ }
+ 
+ @media (max-width:1081px){
+    .container .prod-data {
+
+       overflow-x: scroll;
+       
+    }
+ 
+    .container .prod-data table{
+      width: 800px;
+    }
+ }
+ .container .prod-data div {
+   width: 90%;
+ }
+
+ 
+ @media (max-width:450px){
+    .container .heading{
+       font-size: 20px;
+    }
+    .container .products .box-container .box img{
+       height: 200px;
+    }
+ } 
